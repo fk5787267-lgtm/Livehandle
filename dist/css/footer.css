@@ -1,0 +1,511 @@
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer {
+  width: 100%;
+  margin-top: 24px;
+  padding: 0 0 18px;
+  border-top: 1px solid color-mix(in srgb, var(--accent) 12%, var(--border));
+  background:
+    radial-gradient(120% 80% at 50% -10%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 55%),
+    var(--card);
+  color: var(--text);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-grid {
+  display: grid;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.05fr);
+  align-items: start;
+  gap: 32px;
+  margin: 0 auto;
+  padding: 2.25rem 3rem 0;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-grid > * {
+  min-width: 0;
+  grid-column: auto;
+  grid-row: auto;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-grid > .footer-group {
+  grid-column: auto;
+  grid-row: auto;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-grid > div:first-child {
+  grid-row: auto;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid .brand {
+  gap: 8px;
+  color: var(--text);
+  font-size: 18px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid .brand-name b {
+  color: var(--accent);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid .logo,
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid .logo svg {
+  width: 44px;
+  height: 44px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid .logo {
+  background: url("https://livehandle.site/logo-mark-80.webp") center / contain no-repeat;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid .logo svg {
+  display: none;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > div:first-child > p {
+  max-width: 360px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 18px 0 0;
+  padding: 8px;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 17px;
+  background: color-mix(in srgb, var(--card) 90%, var(--accent-soft));
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges li {
+  align-items: flex-start;
+  gap: 7px;
+  padding: 4px 5px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: 12px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges .badge-icon {
+  display: grid;
+  place-items: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges .badge-icon svg {
+  width: 16px;
+  height: 16px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges strong {
+  font-size: 13px;
+  font-weight: 700;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges small {
+  color: var(--muted);
+  font-size: 11px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group {
+  align-self: start;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group summary {
+  padding: 2px 0 14px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  list-style: none;
+  cursor: pointer;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group summary::-webkit-details-marker {
+  display: none;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group summary::after {
+  content: none;
+}
+@media (min-width: 1024px) {
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group summary {
+    cursor: default;
+  }
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group ul {
+  display: grid;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style: none;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 0;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  transition: color .18s ease, transform .18s ease;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a:hover {
+  color: var(--accent);
+  text-decoration: none;
+  transform: translateX(2px);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a::before {
+  content: none;
+  display: none;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a > svg,
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a > span {
+  display: inline-flex;
+  flex: 0 0 18px;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a > svg {
+  width: 16px;
+  height: 16px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 20px;
+  font-weight: 500;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a b svg {
+  width: 16px;
+  height: 16px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a:not(:has(> b))::after {
+  content: "\203A";
+  margin-left: auto;
+  color: var(--muted);
+  font-family: "Segoe UI Symbol", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(1) a::before { content: "\25CE"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(2) a::before { content: "\266B"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(3) a::before { content: "\2197"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(4) a::before { content: "\2193"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(5) a::before { content: "\2665"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(6) a::before { content: "\266B"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(1) li:nth-child(7) a::before { content: "\2726"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(2) li:nth-child(1) a::before { content: "\25A4"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(2) li:nth-child(2) a::before { content: "\24D8"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(2) li:nth-child(3) a::before { content: "\2699"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(4) li:nth-child(1) a::before { content: "\25C7"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(4) li:nth-child(2) a::before { content: "\25A7"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(4) li:nth-child(3) a::before { content: "\00A9"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-grid > .footer-group:not(.footer-mobile-only):nth-of-type(4) li:nth-child(4) a::before { content: "\2709"; }
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-notice {
+  display: grid;
+  grid-template-columns: 21px minmax(0, 1fr);
+  grid-column: 4;
+  grid-row: 2;
+  align-items: start;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--card) 86%, var(--accent-soft));
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-notice::before {
+  content: "NOTE";
+  grid-column: 1 / -1;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-notice p {
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-notice .note-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 21px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-notice .note-icon svg {
+  width: 13px;
+  height: 13px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-note {
+  display: flex;
+  width: 100%;
+  max-width: none;
+  min-height: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 1.35rem auto 0;
+  padding: 1rem 4rem 1.15rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  text-align: left;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-note a {
+  color: var(--accent);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-note .heart {
+  color: var(--accent);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-note > p:last-child {
+  flex: none;
+  white-space: nowrap;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a b {
+  display: none;
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a::after {
+  content: "" !important;
+  width: 7px;
+  height: 7px;
+  flex: none;
+  margin-left: auto;
+  border-right: 1.7px solid var(--muted);
+  border-bottom: 1.7px solid var(--muted);
+  transform: rotate(-45deg);
+}
+:is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group a::before {
+  content: none !important;
+  display: none !important;
+}
+
+@media (max-width: 1023px) {
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer {
+    margin-top: 24px;
+    padding: 0 0 calc(3.75rem + 20px + env(safe-area-inset-bottom));
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-grid {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .5rem;
+    padding: 1.25rem 1.25rem 0;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-grid > div:first-child {
+    margin: 0;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-notice {
+    grid-column: auto;
+    grid-row: auto;
+    margin-top: 1rem;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-mobile-only {
+    display: block;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group summary {
+    display: flex;
+    min-height: 3rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7rem .9rem;
+    border: 1px solid var(--border);
+    border-radius: .95rem;
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group summary::after {
+    content: "";
+    width: .45rem;
+    height: .45rem;
+    margin: 0 .15rem 0 1rem;
+    border-right: 1.5px solid var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    transform: rotate(45deg);
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group[open] summary {
+    border-radius: .95rem .95rem .35rem .35rem;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group[open] summary::after {
+    transform: rotate(225deg);
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-group ul {
+    padding: .45rem .9rem .75rem;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-note {
+    width: 100%;
+    max-width: none;
+    margin: 1.35rem auto 0;
+    padding: 1rem 1.25rem 1.15rem;
+    flex-direction: column;
+    align-items: center;
+    gap: .45rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 639px) {
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer {
+    padding-bottom: calc(3.75rem + 20px + env(safe-area-inset-bottom));
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-badges {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-notice {
+    grid-column: 1;
+    margin-top: 18px;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .site-footer .footer-note {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 1.25rem;
+    padding: 1rem 1.25rem 1.15rem;
+  }
+  :is(body[data-page="index"], body[data-page="trends"]:not([data-page="index"]):not([data-page="contact"]), body[data-page="learn"], body[data-page="about"], body[data-page="contact"], body[data-page="growth"], body[data-page="downloader"]) .footer-note > p:last-child {
+    white-space: normal;
+  }
+}
+
+.global-ad-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.global-ad-slot {
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-inline: .5rem;
+  overflow: hidden;
+}
+.global-ad-slot-rect { min-height: 250px; }
+.global-ad-slot-leaderboard { min-height: 90px; }
+.global-ad-slot-mobile { min-height: 50px; }
+.global-ad-slot-native { min-height: 280px; }
+@media (max-width: 767px) {
+  .global-ad-slot-rect,
+  .global-ad-slot-leaderboard,
+  .global-ad-slot-native { display: none; }
+  .global-ad-slot-mobile {
+    display: flex;
+    min-height: 50px;
+    margin-bottom: calc(4.5rem + env(safe-area-inset-bottom));
+    padding-inline: 0;
+  }
+}
+@media (min-width: 768px) {
+  .global-ad-slot-mobile { display: none; }
+}
+
+.livehandle-popup-ad {
+  position: fixed;
+  z-index: 99999;
+  top: 20px;
+  left: 50%;
+  display: flex;
+  width: 540px;
+  max-width: calc(100vw - 30px);
+  min-height: 115px;
+  align-items: center;
+  gap: 18px;
+  padding: 17px;
+  transform: translate(-50%, -20px);
+  border-radius: 10px;
+  background: #252525;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .4);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease, transform .5s ease, visibility .5s ease;
+}
+.livehandle-popup-ad.is-visible {
+  transform: translate(-50%, 0);
+  opacity: 1;
+  visibility: visible;
+}
+.livehandle-popup-image {
+  width: 80px;
+  height: 80px;
+  flex: 0 0 80px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #eee;
+}
+.livehandle-popup-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.livehandle-popup-content { flex: 1; min-width: 0; }
+.livehandle-popup-content h3 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: 19px;
+  line-height: 1.25;
+}
+.livehandle-popup-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.livehandle-popup-actions a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.livehandle-popup-actions a:hover { color: #a99aff; }
+.livehandle-popup-hide {
+  padding: 5px 10px;
+  border: 0;
+  background: transparent;
+  color: #aaa;
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+}
+.livehandle-popup-hide:hover { color: #fff; }
+@media (max-width: 550px) {
+  .livehandle-popup-ad {
+    top: 15px;
+    gap: 12px;
+    min-height: 100px;
+    padding: 12px;
+  }
+  .livehandle-popup-image {
+    width: 65px;
+    height: 65px;
+    flex-basis: 65px;
+  }
+  .livehandle-popup-content h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .livehandle-popup-actions a,
+  .livehandle-popup-hide { font-size: 13px; }
+}

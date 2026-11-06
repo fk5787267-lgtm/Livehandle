@@ -1,0 +1,17 @@
+/* About page only */
+.ab-hero { padding: 56px 0 32px; background: radial-gradient(900px 380px at 15% -5%, var(--accent-soft), transparent 70%), var(--bg); }
+.ab-inner { max-width: 1280px; }
+.wordmark { font-size: 2.6rem; font-weight: 800; margin: 0 0 8px; letter-spacing: -0.02em; }
+.wordmark b { color: var(--accent); }
+.ab-hero .pill { margin-bottom: 18px; }
+.ab-hero h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); margin-bottom: 14px; }
+.ab-hero .lead { color: var(--muted); font-size: 1.1rem; max-width: 720px; margin-bottom: 26px; }
+.ab-body { padding-top: 16px; }
+.ab-body .container { display: grid; gap: 20px; }
+.ab-card { padding: 28px; }
+.ab-card h2 { font-size: 1.5rem; margin: 0 0 12px; }
+.ab-card p { color: var(--muted); }
+.ab-card .eyebrow { margin-bottom: 6px; }
+.principles { margin: 0; padding-left: 20px; color: var(--muted); display: grid; gap: 10px; }
+.principles strong { color: var(--text); }
+.ab-badges { margin-bottom: 0; }

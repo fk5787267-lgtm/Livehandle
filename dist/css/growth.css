@@ -1,0 +1,749 @@
+/* Growth analyzer page only */
+body[data-page="growth"] {
+}
+
+.gr-hero {
+  padding: 54px 0 32px;
+  background:
+    radial-gradient(850px 460px at 18% 28%, rgba(109, 93, 254, .18), transparent 72%),
+    radial-gradient(760px 420px at 90% 50%, rgba(109, 93, 254, .11), transparent 70%),
+    var(--bg);
+  text-align: center;
+}
+
+.gr-hero-inner {
+  max-width: 972px;
+}
+
+.gr-hero .pill {
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  background: color-mix(in srgb, var(--accent-soft) 72%, var(--card));
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--border));
+}
+
+.gr-hero .pill svg {
+  width: 16px;
+  height: 16px;
+}
+
+.gr-hero h1 {
+  font-size: clamp(2.15rem, 4vw, 2.8rem);
+  margin-bottom: 14px;
+}
+
+.gr-hero .lead {
+  max-width: 640px;
+  margin: 0 auto 20px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.platform-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.platform-toggle .chip {
+  padding: 8px 14px;
+  font-size: .9rem;
+}
+
+.platform-toggle .chip svg {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+}
+
+.platform-toggle .chip.is-on {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  color: var(--text);
+  background: color-mix(in srgb, var(--accent-soft) 66%, var(--card));
+}
+
+.gr-badges {
+  width: 100%;
+  max-width: 510px;
+  margin: 0 auto 32px;
+  padding: 7px 10px;
+  justify-content: stretch;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--card) 78%, transparent);
+}
+
+.gr-badges li {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: .78rem;
+}
+
+.gr-badges li + li {
+  border-left: 1px solid var(--border);
+}
+
+.gr-badges .badge-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.gr-badges .badge-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.gr-badges strong,
+.gr-badges small {
+  display: block;
+}
+
+.gr-badges strong {
+  line-height: 1.3;
+}
+
+.gr-badges small {
+  font-size: .72rem;
+}
+
+.gr-card {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 26px;
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 24px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 38%, var(--card)), var(--card) 55%);
+  box-shadow: 0 18px 42px rgba(48, 37, 132, .12);
+  text-align: left;
+}
+
+.gr-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.gr-title {
+  margin: 0 0 4px;
+  font-size: 1.12rem;
+  letter-spacing: -.025em;
+}
+
+.gr-card .small {
+  font-size: .82rem;
+  margin: 0;
+}
+
+.gr-card form {
+  display: grid;
+  gap: 16px;
+}
+
+.gr-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(180px, .55fr);
+  gap: 16px;
+}
+
+.gr-card .input-wrap,
+.gr-card .select {
+  min-height: 50px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent-soft) 28%, var(--card));
+}
+
+.gr-card .input-wrap .input {
+  background: transparent;
+}
+
+.gr-card .input-wrap .prefix {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.gr-card .btn {
+  min-height: 52px;
+  border-radius: 16px;
+  font-size: 1rem;
+  padding: 14px 18px;
+}
+
+.gr-card .btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.gr-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px 0 0;
+  padding: 14px 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, var(--border));
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent-soft) 55%, var(--card));
+  font-size: .84rem;
+  line-height: 1.5;
+}
+
+.gr-note > svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: var(--accent);
+}
+
+.gr-note a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) {
+  padding: 10px 0;
+  background: transparent;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) > .container {
+  width: calc(100% - 32px);
+  max-width: 940px;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) > .container:not(.prose) {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 40%, var(--card)), var(--card) 52%);
+  box-shadow: 0 12px 30px rgba(20, 18, 60, .08);
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) .section-head {
+  margin-bottom: 20px;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) .grid {
+  gap: 14px;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) .grid .card {
+  border-color: color-mix(in srgb, var(--accent) 15%, var(--border));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--accent-soft) 35%, var(--card));
+  box-shadow: none;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) .grid .card p:last-child {
+  margin-bottom: 0;
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) > .container.prose {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 40%, var(--card)), var(--card) 52%);
+  box-shadow: 0 12px 30px rgba(20, 18, 60, .08);
+}
+
+body[data-page="growth"] main > section:not(.gr-hero) > .container.prose p:last-child {
+  margin-bottom: 0;
+}
+
+body[data-page="growth"] .site-footer {
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--bg-alt), var(--bg));
+}
+
+body[data-page="growth"] .footer-grid {
+  min-height: 350px;
+}
+
+body[data-page="growth"] .footer-grid a:hover {
+  color: var(--accent);
+}
+
+body[data-page="growth"] .footer-notice {
+  color: var(--muted);
+}
+
+body[data-page="growth"] .footer-notice .note-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+body[data-page="growth"] .footer-notice .note-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .header-inner {
+  height: 68px;
+  gap: 20px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .logo,
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .logo svg {
+  width: 46px;
+  height: 46px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .nav {
+  gap: 4px;
+  padding: 4px 6px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .nav a {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .header-app {
+  min-height: 42px;
+  padding: 9px 16px;
+  font-size: 13px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .header-actions .icon-btn {
+  width: 42px;
+  height: 42px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid .logo,
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid .logo svg {
+  width: 44px;
+  height: 44px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-group summary {
+  font-size: 13px;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-group a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-group a > svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--accent);
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-group a::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: none;
+  margin-left: auto;
+  border-top: 1.5px solid var(--muted);
+  border-right: 1.5px solid var(--muted);
+  transform: rotate(45deg);
+}
+
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid,
+body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .footer-note {
+  max-width: 1320px;
+}
+
+body[data-page="growth"] .footer-badges {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 16px;
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--accent-soft) 46%, var(--card));
+}
+
+body[data-page="growth"] .footer-badges li {
+  align-items: flex-start;
+  gap: 6px;
+  padding: 4px;
+  font-size: 11px;
+}
+
+body[data-page="growth"] .footer-badges .badge-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+body[data-page="growth"] .footer-badges .badge-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+body[data-page="growth"] .bottom-nav a span svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+body[data-page="growth"] .heart svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+}
+
+:root[data-theme="dark"] body[data-page="growth"] .nav {
+  border-color: rgba(212, 208, 255, .76);
+  background: rgba(11, 11, 21, .86);
+  box-shadow: 0 0 0 1px rgba(109, 93, 254, .16), inset 0 1px 0 rgba(255, 255, 255, .07);
+}
+
+:root[data-theme="dark"] body[data-page="growth"] .header-app {
+  border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
+  background: color-mix(in srgb, var(--accent-soft) 38%, var(--card));
+  box-shadow: 0 8px 20px rgba(109, 93, 254, .14);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body[data-page="growth"] .nav {
+    border-color: rgba(212, 208, 255, .76);
+    background: rgba(11, 11, 21, .86);
+    box-shadow: 0 0 0 1px rgba(109, 93, 254, .16), inset 0 1px 0 rgba(255, 255, 255, .07);
+  }
+
+  :root:not([data-theme="light"]) body[data-page="growth"] .header-app {
+    border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
+    background: color-mix(in srgb, var(--accent-soft) 38%, var(--card));
+    box-shadow: 0 8px 20px rgba(109, 93, 254, .14);
+  }
+}
+
+@media (max-width: 1023px) {
+  .gr-hero {
+    padding-top: 42px;
+  }
+
+  body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .header-inner {
+    height: 58px;
+    gap: 12px;
+  }
+
+  body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .logo,
+  body[data-page="growth"]:not([data-page="index"]):not([data-page="contact"]) .logo svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .gr-hero {
+    padding: 36px 0 24px;
+  }
+
+  .gr-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .gr-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .gr-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .gr-badges {
+    padding: 6px 8px;
+  }
+
+  .gr-badges li {
+    gap: 6px;
+    padding: 6px 5px;
+    font-size: .72rem;
+  }
+
+  .gr-badges .badge-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  body[data-page="growth"] main > section:not(.gr-hero) > .container:not(.prose),
+  body[data-page="growth"] main > section:not(.gr-hero) > .container.prose {
+    padding: 20px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .gr-hero .lead {
+    font-size: .95rem;
+  }
+
+  .gr-badges li {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+body[data-page="growth"] .gr-preview-section > .container {
+  padding: 32px 38px;
+  text-align: center;
+}
+
+.gr-preview-icon {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 16px;
+  border-radius: 18px;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+.gr-preview-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.gr-preview-section h2,
+.gr-faq-section h2,
+.gr-related-section h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+}
+
+.gr-preview-copy {
+  max-width: 680px;
+  margin: 0 auto 20px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.gr-preview-list {
+  display: grid;
+  gap: 10px;
+  width: min(100%, 520px);
+  margin: 0 auto;
+  padding: 16px 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent-soft) 28%, var(--card));
+  list-style: none;
+  text-align: left;
+}
+
+.gr-preview-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-size: .92rem;
+}
+
+.gr-preview-list svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  color: var(--accent);
+}
+
+body[data-page="growth"] .gr-steps-section > .container {
+  padding: 26px;
+}
+
+.gr-steps-section .section-head {
+  text-align: center;
+}
+
+.gr-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.gr-steps li {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid color-mix(in srgb, var(--accent) 15%, var(--border));
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--accent-soft) 35%, var(--card));
+}
+
+.gr-steps .num {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.gr-steps h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.gr-steps p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .9rem;
+  line-height: 1.65;
+}
+
+body[data-page="growth"] .gr-report-section > .container,
+body[data-page="growth"] .gr-usecases-section > .container {
+  max-width: 940px;
+}
+
+.gr-faq-section > .container,
+.gr-related-section > .container {
+  padding: 24px;
+}
+
+.gr-faq-section > .container > .eyebrow,
+.gr-faq-section > .container > h2,
+.gr-related-section > .container > .eyebrow,
+.gr-related-section > .container > h2 {
+  text-align: center;
+}
+
+.gr-faq-section h2,
+.gr-related-section h2 {
+  margin-bottom: 20px;
+}
+
+.gr-faq-section details.faq {
+  border-color: color-mix(in srgb, var(--accent) 16%, var(--border));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent-soft) 24%, var(--card));
+}
+
+.gr-faq-section details.faq:last-child {
+  margin-bottom: 0;
+}
+
+.gr-faq-section details.faq summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+
+.gr-faq-section details.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.gr-faq-section details.faq summary::after {
+  content: "+";
+  margin-left: auto;
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.gr-faq-section details.faq[open] summary::after {
+  content: "−";
+}
+
+.gr-faq-section details.faq summary svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--accent);
+}
+
+.gr-faq-section details.faq p {
+  padding-left: 28px;
+  line-height: 1.65;
+}
+
+.gr-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.gr-related-grid a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--border));
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent-soft) 30%, var(--card));
+  color: var(--text);
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.gr-related-grid a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.gr-related-grid a > svg:first-child {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  color: var(--accent);
+}
+
+.gr-related-grid .related-arrow {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin-left: auto;
+  color: var(--muted);
+}
+
+@media (max-width: 760px) {
+  body[data-page="growth"] .gr-preview-section > .container,
+  body[data-page="growth"] .gr-steps-section > .container,
+  .gr-faq-section > .container,
+  .gr-related-section > .container {
+    padding: 20px;
+  }
+
+  .gr-steps,
+  .gr-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gr-preview-list {
+    padding: 14px;
+  }
+}

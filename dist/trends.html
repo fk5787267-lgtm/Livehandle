@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Trends &amp; Idea Finder | LiveHandle</title>
+<meta name="description" content="Explore content-gap ideas with heuristic demand and competition signals for creators. Scores are for brainstorming, not verified search-volume charts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/trends.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body data-page="trends">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="LiveHandle home">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="40" height="40">
+          <defs><linearGradient id="trends-logo-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a628f5"/><stop offset="1" stop-color="#315df5"/></linearGradient></defs>
+          <circle cx="24" cy="24" r="23" fill="url(#trends-logo-gradient)"/><circle cx="24" cy="24" r="15" fill="none" stroke="#fff" stroke-width="2.4"/>
+          <path d="M15 30h3v7h-3zm6-5h3v12h-3zm6-4h3v16h-3z" fill="#fff"/><circle cx="22" cy="17" r="4" fill="#fff"/>
+          <path d="M16 26c1.2-3 3.2-4.5 6-4.5" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M32 31l3 3 6-8" fill="none" stroke="#39d996" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </svg>
+      </span>
+      <span class="brand-name">Live<b>Handle</b></span>
+    </a>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a data-nav="index" href="index.html">Home</a>
+      <a data-nav="downloader" href="downloader.html">Download</a>
+      <a data-nav="growth" href="growth.html">Growth</a>
+      <a data-nav="trends" href="trends.html">Trends</a>
+      <a data-nav="learn" href="learn.html">Learn</a>
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn soft header-app" href="https://livehandle.site/downloads/LiveHandle.apk" aria-label="Download LiveHandle Android app">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6 9h12v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9zm2-4 1-2m7 2-1-2M4 9a2 2 0 0 1 4 0m8 0a2 2 0 0 1 4 0"/></svg>
+        Download App
+      </a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.2 15.4A8.7 8.7 0 0 1 8.6 3.8 8.8 8.8 0 1 0 20.2 15.4Z"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section class="tr-hero">
+    <div class="container tr-grid">
+      <div class="tr-main">
+        <span class="pill"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 2.5c.7 4.2-2.8 5.2-2.8 8.2 0 1.1.6 1.8 1.5 2.2-.1-2.1 1.4-3.7 3.1-4.9 2.5 2.5 4 5 4 7.7a7 7 0 1 1-14 0c0-3.5 2-6.3 5.2-9 .1 2.1.5 3.1 1.4 3.8.1-2.4 1.9-4.6 1.6-8Z"/></svg>Ideation helpers · not live search charts</span>
+        <h1>Content Trends &amp; Idea Finder</h1>
+        <p class="lead">
+          Explore content-gap ideas with heuristic demand and competition signals for creators.
+          Use scores for brainstorming — they are not verified live search-volume charts.
+        </p>
+
+        <ul class="badges tr-badges">
+          <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 18h6v2H9zm-.8-3.2A7 7 0 1 1 16 15l-1 1.5H9L8.2 14.8ZM12 4a5 5 0 0 0-3.6 8.5c.7.7 1.1 1.2 1.3 2h4.6c.2-.8.6-1.3 1.3-2A5 5 0 0 0 12 4Z"/></svg></span><span><strong>Idea gaps</strong><small>Heuristic</small></span></li>
+          <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg></span><span><strong>Hooks &amp; scripts</strong><small>Ready to use</small></span></li>
+          <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 19h4V9H4v10Zm6 0h4V5h-4v14Zm6 0h4v-7h-4v7Z"/></svg></span><span><strong>Opportunity</strong><small>Scored ideas</small></span></li>
+        </ul>
+
+        <div class="card find-card">
+          <div class="find-top">
+            <div>
+              <span class="eyebrow">Find ideas</span>
+              <h2 class="find-title">Build a content opportunity report</h2>
+              <p class="muted small">Niche · platform · language · country</p>
+            </div>
+            <span class="free-pill">FREE</span>
+          </div>
+          <form id="tr-form" novalidate>
+            <label class="field">Niche / topic
+              <span class="input-wrap">
+                <span class="prefix" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8" fill="none" stroke="currentColor" stroke-width="2"/><path d="m16 16 4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                <input class="input" id="tr-niche" name="niche" type="text" placeholder="e.g. Angular, Fitness, Freelancing" autocomplete="off">
+              </span>
+            </label>
+            <div class="suggest">
+              <span class="muted small">Try an example</span>
+              <button class="chip" type="button" data-niche="AI Tools">AI Tools</button>
+              <button class="chip" type="button" data-niche="Funny Videos">Funny Videos</button>
+              <button class="chip" type="button" data-niche="Fitness">Fitness</button>
+              <button class="chip" type="button" data-niche="Cooking">Cooking</button>
+              <button class="chip" type="button" data-niche="Business">Business</button>
+              <button class="chip" type="button" data-niche="Study Tips">Study Tips</button>
+              <button class="chip" type="button" data-niche="Gaming">Gaming</button>
+            </div>
+            <label class="field">Optional focus
+              <span class="input-wrap">
+                <input class="input" id="tr-focus" name="focus" type="text" placeholder="e.g. beginner tutorials" autocomplete="off">
+              </span>
+            </label>
+            <div class="tr-options">
+              <label class="field" for="tr-platform">Platform
+                <select class="select" id="tr-platform" name="platform">
+                  <option value="All platforms">All platforms</option><option>Instagram</option><option>TikTok</option><option>Facebook</option>
+                </select>
+              </label>
+              <label class="field" for="tr-language">Language
+                <select class="select" id="tr-language" name="language">
+                  <option value="Any language">Any language</option><option>English</option><option>Spanish</option><option>Urdu</option><option>Hindi</option>
+                </select>
+              </label>
+              <label class="field" for="tr-country">Country
+                <select class="select" id="tr-country" name="country">
+                  <option value="Any country">Any country</option><option>United States</option><option>United Kingdom</option><option>Pakistan</option><option>India</option><option>Canada</option>
+                </select>
+              </label>
+            </div>
+            <button class="btn block" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 18h6v2H9zm-.8-3.2A7 7 0 1 1 16 15l-1 1.5H9L8.2 14.8ZM12 4a5 5 0 0 0-3.6 8.5c.7.7 1.1 1.2 1.3 2h4.6c.2-.8.6-1.3 1.3-2A5 5 0 0 0 12 4Z"/></svg>Find content opportunities</button>
+            <p class="tr-note"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M12 11v5m0-8h.01" fill="none" stroke="var(--card)" stroke-width="2.2" stroke-linecap="round"/></svg><span>Scores are estimated heuristics for ideation — not exact live search volumes.</span></p>
+          </form>
+          <p id="tr-result" class="result" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <aside class="tr-side">
+        <div class="card side-card">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 2.5c.7 4.2-2.8 5.2-2.8 8.2 0 1.1.6 1.8 1.5 2.2-.1-2.1 1.4-3.7 3.1-4.9 2.5 2.5 4 5 4 7.7a7 7 0 1 1-14 0c0-3.5 2-6.3 5.2-9 .1 2.1.5 3.1 1.4 3.8.1-2.4 1.9-4.6 1.6-8Z"/></svg>Trending searches</span>
+          <ul class="trend-list">
+            <li><button type="button" class="trend" data-niche="Short-form hooks"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17 10 12l3 3 6-7m0 0h-5m5 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Short-form hooks</button></li>
+            <li><button type="button" class="trend" data-niche="Carousel storytelling"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17 10 12l3 3 6-7m0 0h-5m5 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Carousel storytelling</button></li>
+            <li><button type="button" class="trend" data-niche="Beginner tutorials"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17 10 12l3 3 6-7m0 0h-5m5 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Beginner tutorials</button></li>
+            <li><button type="button" class="trend" data-niche="Myth-busting series"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17 10 12l3 3 6-7m0 0h-5m5 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Myth-busting series</button></li>
+            <li><button type="button" class="trend" data-niche="Tool comparisons"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 17 10 12l3 3 6-7m0 0h-5m5 0v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Tool comparisons</button></li>
+          </ul>
+        </div>
+        <div class="card side-card">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="m15.8 8.2-2.4 5.2-5.2 2.4 2.4-5.2 5.2-2.4Z" fill="currentColor"/></svg>Popular niches</span>
+          <div class="chips niche-chips">
+            <button class="chip" type="button" data-niche="Freelancing">Freelancing</button>
+            <button class="chip" type="button" data-niche="Skincare">Skincare</button>
+            <button class="chip" type="button" data-niche="Personal Finance">Personal Finance</button>
+            <button class="chip" type="button" data-niche="Productivity">Productivity</button>
+            <button class="chip" type="button" data-niche="Web Development">Web Development</button>
+            <button class="chip" type="button" data-niche="Content Creation">Content Creation</button>
+          </div>
+        </div>
+        <div class="card side-card recent-card">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6L4 8.5M4 4v4.5h4.5M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Recently generated</span>
+          <p class="muted small">Your recent niches will appear here.</p>
+        </div>
+        <div class="card side-card creator-tips">
+          <span class="eyebrow"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M9 18h6v2H9zm-.8-3.2A7 7 0 1 1 16 15l-1 1.5H9L8.2 14.8ZM12 4a5 5 0 0 0-3.6 8.5c.7.7 1.1 1.2 1.3 2h4.6c.2-.8.6-1.3 1.3-2A5 5 0 0 0 12 4Z"/></svg>Creator tips</span>
+          <ul class="tip-list">
+            <li>Lead with a problem in the first two seconds.</li>
+            <li>One idea per video beats several half-explained points.</li>
+            <li>Reply to early comments to encourage discussion.</li>
+            <li>Evergreen tutorials can stay useful longer than short-lived trends.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="tr-preview-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>How the idea finder works</h2>
+        <p>Start with a niche, set context, then review structured prompts to help plan your next piece of content.</p>
+      </div>
+      <div class="tr-process-grid">
+        <article class="card tr-process-card"><span class="num">1</span><h3>Enter your topic and audience</h3><p>Choose a niche, platform, language, and country to frame the ideas around your intended audience.</p></article>
+        <article class="card tr-process-card"><span class="num">2</span><h3>Explore potential content gaps</h3><p>Review heuristic demand and competition cues as prompts for brainstorming—not verified search data.</p></article>
+        <article class="card tr-process-card"><span class="num">3</span><h3>Validate ideas before posting</h3><p>Use your own audience knowledge and recent platform activity to decide which angles are worth testing.</p></article>
+      </div>
+      <article class="card tr-example">
+        <div class="tr-example-copy">
+          <span class="eyebrow">Example preview</span>
+          <p class="muted small">Fitness · Instagram</p>
+          <h3>“5 Fitness Mistakes That Quietly Kill Growth”</h3>
+          <p class="muted">A beginner-friendly evergreen angle. Treat the topic and score as a starting point for your own research.</p>
+        </div>
+        <div class="tr-score" aria-label="Example score, not a live measurement">
+          <span>Opportunity</span><strong>78</strong><small>Illustrative score</small>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container prose">
+      <span class="eyebrow">Method</span>
+      <h2>How the scores are built</h2>
+      <p>Scores combine simple heuristics: how many creators cover a topic, how recently it appears, and how much room is left for a new angle. They are for brainstorming only.</p>
+      <p>They are not search volume, and they do not predict reach. Check them against your own audience before you commit to a series.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Getting started</span><h2>How to find content opportunities</h2></div>
+      <ol class="steps grid cols-3">
+        <li class="card"><span class="num">1</span><h3>Choose a niche</h3><p>Start with a clear topic or audience you understand.</p></li>
+        <li class="card"><span class="num">2</span><h3>Add useful context</h3><p>Optionally choose a platform, language, country, or angle to shape the brainstorming prompt.</p></li>
+        <li class="card"><span class="num">3</span><h3>Validate ideas yourself</h3><p>Check suggestions against your audience and current platform activity before investing in a series.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">FAQ</span><h2>Questions about content trends</h2></div>
+      <details class="faq"><summary>Are these live search-volume trends?</summary><p>No. Ideas and scores are heuristic brainstorming aids, not verified search-volume charts or live demand measurements.</p></details>
+      <details class="faq"><summary>Do the suggestions guarantee views or growth?</summary><p>No. Audience interest, creative execution, timing, and platform distribution all affect performance.</p></details>
+      <details class="faq"><summary>What should I do with an idea?</summary><p>Review recent platform content, adapt the angle to your expertise, and test with your own audience.</p></details>
+    </div>
+  </section>
+
+  <section class="tr-related-section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Explore</span><h2>Related tools</h2></div>
+      <div class="tr-related-grid">
+        <a class="card" href="growth.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span><strong>TikTok Growth Analyzer</strong><small>Explore recent public views samples.</small></span><svg class="related-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="card" href="index.html#quick-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.2 3h3.1c.2 2.2 1.4 3.8 3.7 4.5v3.2a10 10 0 0 1-3.7-1.3v6.2a6.1 6.1 0 1 1-6.1-6.1c.5 0 1 .1 1.5.2v3.4a2.8 2.8 0 1 0 1.5 2.5V3Z"/></svg><span><strong>TikTok Profile Analyzer</strong><small>Review public profile signals.</small></span><svg class="related-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="card" href="learn.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22V5.5Zm0 0V22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span><strong>How LiveHandle works</strong><small>Learn about public data and estimates.</small></span><svg class="related-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html" aria-label="LiveHandle home"><span class="logo" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40"><defs><linearGradient id="footer-trends-logo-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a628f5"/><stop offset="1" stop-color="#315df5"/></linearGradient></defs><circle cx="24" cy="24" r="23" fill="url(#footer-trends-logo-gradient)"/><circle cx="24" cy="24" r="15" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M15 30h3v7h-3zm6-5h3v12h-3zm6-4h3v16h-3z" fill="#fff"/><circle cx="22" cy="17" r="4" fill="#fff"/><path d="M16 26c1.2-3 3.2-4.5 6-4.5" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M32 31l3 3 6-8" fill="none" stroke="#39d996" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg></span><span class="brand-name">Live<b>Handle</b></span></a>
+      <p class="muted">Free tools for public social-media profile signals and creator metrics. Authenticity scores are analytical signals — not identity verification.</p>
+      <ul class="badges footer-badges">
+        <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5 21 6v5.3c0 5.2-3.6 9.1-9 10.7-5.4-1.6-9-5.5-9-10.7V6l9-3.5Zm0 4v11.7c3.4-1.3 5.5-3.7 5.9-7.1V8L12 6.5Z"/></svg></span><span><strong>Free to use</strong><small>Always</small></span></li><li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 2 5 13h5l-.5 9L19 10h-5.2L13.5 2Z"/></svg></span><span><strong>Fast &amp; Reliable</strong><small>Live public data when available</small></span></li><li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2.5" fill="currentColor"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span><strong>Privacy focused</strong><small>Public data only</small></span></li>
+      </ul>
+    </div>
+    <details class="footer-group"><summary>Tools</summary><ul>
+      <li><a href="index.html#quick-check"><svg aria-hidden="true"><use href="footer-icons.svg#i-instagram"></use></svg>Instagram analyzer</a></li><li><a href="index.html#quick-check"><svg aria-hidden="true"><use href="footer-icons.svg#i-tiktok"></use></svg>TikTok analyzer</a></li><li><a href="growth.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-chart"></use></svg>TikTok growth</a></li><li><a href="downloader.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-download"></use></svg>Video downloader</a></li><li><a href="https://livehandle.site/instagram-engagement-calculator"><svg aria-hidden="true"><use href="footer-icons.svg#i-heart"></use></svg>IG engagement</a></li><li><a href="https://livehandle.site/tiktok-engagement-calculator"><svg aria-hidden="true"><use href="footer-icons.svg#i-tiktok"></use></svg>TT engagement</a></li><li><a href="trends.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-flame"></use></svg>Trends</a></li>
+    </ul></details>
+    <details class="footer-group"><summary>Learn</summary><ul><li><a href="learn.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-book"></use></svg>Learn</a></li><li><a href="about.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-about"></use></svg>About</a></li><li><a href="learn.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-settings"></use></svg>How it works</a></li></ul></details>
+    <details class="footer-group footer-mobile-only"><summary>About</summary><ul><li><a href="about.html">About LiveHandle</a></li><li><a href="learn.html">How it works</a></li></ul></details>
+    <details class="footer-group"><summary>Legal</summary><ul><li><a href="about.html#privacy"><svg aria-hidden="true"><use href="footer-icons.svg#i-shield"></use></svg>Privacy</a></li><li><a href="about.html#terms"><svg aria-hidden="true"><use href="footer-icons.svg#i-file"></use></svg>Terms</a></li><li><a href="https://livehandle.site/copyright"><svg aria-hidden="true"><use href="footer-icons.svg#i-scale"></use></svg>Copyright</a></li><li><a href="contact.html"><svg aria-hidden="true"><use href="footer-icons.svg#i-mail"></use></svg>Contact</a></li></ul></details>
+    <details class="footer-group footer-mobile-only"><summary>Contact</summary><ul><li><a href="contact.html">Contact</a></li></ul></details>
+    <div class="footer-notice"><span class="note-icon"><svg aria-hidden="true"><use href="footer-icons.svg#i-info-mark"></use></svg></span><p>Public data only. Availability depends on platforms and providers. Do not download content you are not authorized to use.</p></div>
+  </div>
+  <div class="container footer-note"><p class="muted">© 2026 <a href="index.html">LiveHandle</a>. Free public analytics toolkit.</p><p class="muted">Made with <span class="heart" aria-label="love"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.4 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg></span> for creators</p></div>
+</footer>
+<section class="page-advertisements" aria-label="Advertisement placements"></section>
+<nav class="bottom-nav" aria-label="Quick navigation">
+  <a data-nav="index" href="index.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1V10Z"/></svg></span>Home</a><a data-nav="downloader" href="downloader.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Download</a><a data-nav="growth" href="growth.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Growth</a><a data-nav="trends" href="trends.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 2.5c.7 4.2-2.8 5.2-2.8 8.2 0 1.1.6 1.8 1.5 2.2-.1-2.1 1.4-3.7 3.1-4.9 2.5 2.5 4 5 4 7.7a7 7 0 1 1-14 0c0-3.5 2-6.3 5.2-9 .1 2.1.5 3.1 1.4 3.8.1-2.4 1.9-4.6 1.6-8Z"/></svg></span>Trends</a>
+</nav>
+
+<script src="js/common.js"></script>
+<script src="js/ads.js"></script>
+<script src="js/trends.js"></script>
+</body>
+</html>

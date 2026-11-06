@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Media Video Downloader | LiveHandle</title>
+<meta name="description" content="Paste a public Instagram, TikTok, or Facebook video link to preview and download the media when the provider allows. Only download content you are authorized to use.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/downloader.css">
+<link rel="stylesheet" href="css/footer.css">
+</head>
+<body data-page="downloader">
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="LiveHandle home">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="40" height="40">
+          <defs><linearGradient id="downloader-logo-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a628f5"/><stop offset="1" stop-color="#315df5"/></linearGradient></defs>
+          <circle cx="24" cy="24" r="23" fill="url(#downloader-logo-gradient)"/><circle cx="24" cy="24" r="15" fill="none" stroke="#fff" stroke-width="2.4"/>
+          <path d="M15 30h3v7h-3zm6-5h3v12h-3zm6-4h3v16h-3z" fill="#fff"/><circle cx="22" cy="17" r="4" fill="#fff"/>
+          <path d="M16 26c1.2-3 3.2-4.5 6-4.5" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M32 31l3 3 6-8" fill="none" stroke="#39d996" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+        </svg>
+      </span>
+      <span class="brand-name">Live<b>Handle</b></span>
+    </a>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a data-nav="index" href="index.html">Home</a>
+      <a data-nav="downloader" href="downloader.html">Download</a>
+      <a data-nav="growth" href="growth.html">Growth</a>
+      <a data-nav="trends" href="trends.html">Trends</a>
+      <a data-nav="learn" href="learn.html">Learn</a>
+      <a data-nav="about" href="about.html">About</a>
+      <a data-nav="contact" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn soft header-app" href="https://livehandle.site/downloads/LiveHandle.apk" aria-label="Download LiveHandle Android app">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6 9h12v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9zm2-4 1-2m7 2-1-2M4 9a2 2 0 0 1 4 0m8 0a2 2 0 0 1 4 0"/></svg>
+        Download App
+      </a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to dark mode"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M20.2 15.4A8.7 8.7 0 0 1 8.6 3.8 8.8 8.8 0 1 0 20.2 15.4Z"/></svg></button>
+      <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <section class="dl-hero">
+    <div class="container dl-hero-inner">
+      <span class="pill"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Public links · preview and download</span>
+      <h1>Social Media Video Downloader</h1>
+      <p class="lead">
+        Paste a public Instagram, TikTok, or Facebook video link to preview and download the resolved media file
+        when providers allow it. LiveHandle works as an online social media video downloader for public,
+        provider-accessible media. Only download content you own or are authorized to use.
+      </p>
+      <ul class="chips platform-chips" aria-label="Supported platforms">
+        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.7" cy="6.8" r="1.2" fill="currentColor"/></svg>Instagram</li>
+        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.2 3h3.1c.2 2.2 1.4 3.8 3.7 4.5v3.2a10 10 0 0 1-3.7-1.3v6.2a6.1 6.1 0 1 1-6.1-6.1c.5 0 1 .1 1.5.2v3.4a2.8 2.8 0 1 0 1.5 2.5V3Z"/></svg>TikTok</li>
+        <li class="chip"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path fill="var(--card)" d="M13.3 20v-7h2.4l.4-2.7h-2.8V8.6c0-.8.3-1.3 1.4-1.3h1.5V4.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v1.6H7.6V13h2.5v7h3.2Z"/></svg>Facebook</li>
+      </ul>
+
+      <form id="dl-form" class="card dl-form" data-api="/api/resolve" novalidate>
+        <label class="field" for="dl-url">Video link</label>
+        <div class="input-wrap dl-input">
+          <span class="prefix" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m10 13.5 4-4m-6.1 6.6-1.4 1.4a4 4 0 0 1-5.7-5.7l4.2-4.2a4 4 0 0 1 5.7 0m3.3 2.4 1.4-1.4a4 4 0 0 1 5.7 5.7l-4.2 4.2a4 4 0 0 1-5.7 0" transform="translate(2 -2)" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <input class="input" id="dl-url" name="url" type="url" inputmode="url" autocomplete="off"
+                 placeholder="https://www.tiktok.com/@user/video/…">
+        </div>
+        <button class="btn block" type="submit" id="dl-submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 4.8v14.4a1 1 0 0 0 1.5.9l11.3-7.2a1.1 1.1 0 0 0 0-1.8L7.5 3.9A1 1 0 0 0 6 4.8Z"/></svg>Get preview</button>
+        <label class="consent">
+          <input id="dl-consent" type="checkbox">
+          <span>I own this content or have permission to download it.</span>
+        </label>
+        <p id="dl-status" class="result" role="status" aria-live="polite"></p>
+
+        <div id="dl-preview" class="dl-preview" hidden>
+          <video id="dl-video" controls playsinline preload="metadata"></video>
+          <div class="dl-meta">
+            <p id="dl-title" class="dl-title"></p>
+            <a id="dl-download" class="btn" href="#" download>Download</a>
+          </div>
+        </div>
+      </form>
+
+      <ul class="badges dl-badges">
+            <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 2 5 13h5l-.5 9L19 10h-5.2L13.5 2Z"/></svg></span><span><strong>Fast resolve</strong><small>Public links</small></span></li>
+            <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 4.5c-5.1 0-9.2 5-10 7.5 1 2.6 5 7.5 10 7.5s9-4.9 10-7.5c-.8-2.5-4.9-7.5-10-7.5Zm0 12a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9Z"/><circle cx="12" cy="12" r="2" fill="var(--card)"/></svg></span><span><strong>Live preview</strong><small>Before download</small></span></li>
+            <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2.5" fill="currentColor"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span><strong>Auth only</strong><small>Your rights</small></span></li>
+      </ul>
+
+      <p class="notice">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M12 11v5m0-8h.01" fill="none" stroke="var(--card)" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span>Only download content you're authorized to use. Availability depends on public, provider-accessible media;
+            private or restricted posts usually can't be resolved.</span>
+          </p>
+    </div>
+  </section>
+
+  <section class="section-alt dl-steps-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Steps</span>
+        <h2>How to download social media videos</h2>
+      </div>
+      <ol class="steps grid cols-3">
+        <li class="card"><span class="num">1</span><h3>Paste a complete public URL</h3><p>Use a full Instagram reel or post, TikTok video, or Facebook video link. Incomplete or private URLs usually fail.</p></li>
+        <li class="card"><span class="num">2</span><h3>Preview the resolved media</h3><p>If the provider returns a media URL, a preview appears before download. Photo slideshows may be packed briefly.</p></li>
+        <li class="card"><span class="num">3</span><h3>Download only what you may use</h3><p>Respect copyright and platform terms. LiveHandle is a resolver and proxy, not a media archive.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="dl-support-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Support</span>
+        <h2>Online social media video downloader support</h2>
+        <p>Accepted inputs are public Instagram, TikTok, and Facebook video or reel links. The tool is not meant for private stories, DMs, or arbitrary internet videos. Results depend on the provider and the post's public status; deleted, region-locked, or restricted posts return an error rather than a guessed file.</p>
+      </div>
+      <div class="grid cols-2">
+        <article class="card">
+          <h3>TikTok video downloader</h3>
+          <p class="muted">For public TikTok links, LiveHandle resolves the provider's media source and lets you preview before saving.</p>
+          <p class="muted">Photo slideshows and unsupported formats may behave differently because providers package them separately.</p>
+        </article>
+        <article class="card">
+          <h3>Instagram video and reels downloader</h3>
+          <p class="muted">For public reels and video posts, the tool downloads the provider's media URL when available. Private, deleted, or restricted media can't be fetched.</p>
+          <p class="muted">Only save media you own or have permission to save. LiveHandle grants no reuse rights to others' content.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt dl-legal-section" id="legal">
+    <div class="container prose">
+      <span class="eyebrow">Legal</span>
+      <h2>Authorization and copyright</h2>
+      <p>Only download content you own or are authorized to download. LiveHandle grants no rights to other people's videos.</p>
+      <p>Streams are proxied for download. Temporary files may exist briefly for photo slideshows, and LiveHandle is not a permanent host.</p>
+    </div>
+  </section>
+
+  <section class="dl-faq-section">
+    <div class="container prose">
+      <span class="eyebrow">FAQ</span>
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary><span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1-1.8 1.3-1.8 2.8m0 3h.01" fill="none" stroke="var(--card)" stroke-width="2" stroke-linecap="round"/></svg></span><span>Can LiveHandle download social media videos?</span></summary><p>Yes, for public Instagram, TikTok, and Facebook links when the provider returns a downloadable file. Private, restricted, or deleted posts aren't supported.</p></details>
+      <details class="faq"><summary><span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1-1.8 1.3-1.8 2.8m0 3h.01" fill="none" stroke="var(--card)" stroke-width="2" stroke-linecap="round"/></svg></span><span>Can I download Instagram reels?</span></summary><p>Public reels and video posts can be saved when the provider returns the media URL. Private or restricted reels can't.</p></details>
+      <details class="faq"><summary><span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1-1.8 1.3-1.8 2.8m0 3h.01" fill="none" stroke="var(--card)" stroke-width="2" stroke-linecap="round"/></svg></span><span>Which public links can be processed?</span></summary><p>Public Instagram, TikTok, and Facebook video or reel links the resolver can reach.</p></details>
+      <details class="faq"><summary><span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1-1.8 1.3-1.8 2.8m0 3h.01" fill="none" stroke="var(--card)" stroke-width="2" stroke-linecap="round"/></svg></span><span>Can I download private videos?</span></summary><p>No. Private, geo-blocked, deleted, or restricted posts aren't supported.</p></details>
+      <details class="faq"><summary><span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1-1.8 1.3-1.8 2.8m0 3h.01" fill="none" stroke="var(--card)" stroke-width="2" stroke-linecap="round"/></svg></span><span>Does LiveHandle host the original media permanently?</span></summary><p>No. Streams are proxied, and temporary processing files may exist briefly for photo slideshows.</p></details>
+      <details class="faq"><summary><span class="faq-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M9.7 9a2.4 2.4 0 1 1 4.1 1.7c-1.1 1-1.8 1.3-1.8 2.8m0 3h.01" fill="none" stroke="var(--card)" stroke-width="2" stroke-linecap="round"/></svg></span><span>What if a link cannot be resolved?</span></summary><p>Check that the URL is public and complete, then retry. Provider blocks, deletions, or unsupported formats return a clear error.</p></details>
+    </div>
+  </section>
+
+  <section class="dl-related-section">
+    <div class="container">
+      <span class="eyebrow">Explore</span>
+      <h2>Related tools</h2>
+      <div class="dl-related-grid">
+        <a class="dl-related-link" href="index.html#quick-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.2 3h3.1c.2 2.2 1.4 3.8 3.7 4.5v3.2a10 10 0 0 1-3.7-1.3v6.2a6.1 6.1 0 1 1-6.1-6.1c.5 0 1 .1 1.5.2v3.4a2.8 2.8 0 1 0 1.5 2.5V3Z"/></svg><span>Analyze a TikTok account</span><svg class="related-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="dl-related-link" href="index.html#quick-check"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.7" cy="6.8" r="1.2" fill="currentColor"/></svg><span>Analyze an Instagram profile</span><svg class="related-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="dl-related-link" href="trends.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Check TikTok views after download research</span><svg class="related-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html" aria-label="LiveHandle home"><span class="logo" aria-hidden="true"><svg viewBox="0 0 48 48" width="40" height="40"><defs><linearGradient id="footer-downloader-logo-gradient" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a628f5"/><stop offset="1" stop-color="#315df5"/></linearGradient></defs><circle cx="24" cy="24" r="23" fill="url(#footer-downloader-logo-gradient)"/><circle cx="24" cy="24" r="15" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M15 30h3v7h-3zm6-5h3v12h-3zm6-4h3v16h-3z" fill="#fff"/><circle cx="22" cy="17" r="4" fill="#fff"/><path d="M16 26c1.2-3 3.2-4.5 6-4.5" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M32 31l3 3 6-8" fill="none" stroke="#39d996" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/></svg></span><span class="brand-name">Live<b>Handle</b></span></a>
+      <p class="muted">Free tools for public social-media profile signals and creator metrics. Authenticity scores are analytical signals — not identity verification.</p>
+      <ul class="badges footer-badges">
+        <li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5 21 6v5.3c0 5.2-3.6 9.1-9 10.7-5.4-1.6-9-5.5-9-10.7V6l9-3.5Zm0 4v11.7c3.4-1.3 5.5-3.7 5.9-7.1V8L12 6.5Z"/></svg></span><span><strong>Free to use</strong><small>Always</small></span></li><li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 2 5 13h5l-.5 9L19 10h-5.2L13.5 2Z"/></svg></span><span><strong>Fast &amp; Reliable</strong><small>Live public data when available</small></span></li><li><span class="badge-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2.5" fill="currentColor"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span><strong>Privacy focused</strong><small>Public data only</small></span></li>
+      </ul>
+    </div>
+    <details class="footer-group"><summary>Tools</summary><ul>
+      <li><a href="index.html#quick-check"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.7" cy="6.8" r="1.2" fill="currentColor"/></svg>Instagram analyzer</a></li>
+      <li><a href="index.html#quick-check"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M15.2 3h3.1c.2 2.2 1.4 3.8 3.7 4.5v3.2a10 10 0 0 1-3.7-1.3v6.2a6.1 6.1 0 1 1-6.1-6.1c.5 0 1 .1 1.5.2v3.4a2.8 2.8 0 1 0 1.5 2.5V3Z"/></svg>TikTok analyzer</a></li>
+      <li><a href="growth.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>TikTok growth</a></li>
+      <li><a href="downloader.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Video downloader</a></li>
+      <li><a href="https://livehandle.site/instagram-engagement-calculator"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.4 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>IG engagement</a></li>
+      <li><a href="https://livehandle.site/tiktok-engagement-calculator"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M8 6v12m8-12v12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>TT engagement</a></li>
+      <li><a href="trends.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.2 2.5c.7 4.2-2.8 5.2-2.8 8.2 0 1.1.6 1.8 1.5 2.2-.1-2.1 1.4-3.7 3.1-4.9 2.5 2.5 4 5 4 7.7a7 7 0 1 1-14 0c0-3.5 2-6.3 5.2-9 .1 2.1.5 3.1 1.4 3.8.1-2.4 1.9-4.6 1.6-8Z"/></svg>Trends</a></li>
+    </ul></details>
+    <details class="footer-group"><summary>Learn</summary><ul>
+      <li><a href="learn.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11v17H5.5A2.5 2.5 0 0 0 3 22V5.5Zm18 0A2.5 2.5 0 0 0 18.5 3H13v17h5.5a2.5 2.5 0 0 1 2.5 2V5.5Z"/></svg>Learn</a></li>
+      <li><a href="about.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="8" r="1.2" fill="currentColor"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>About</a></li>
+      <li><a href="learn.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m19.4 13 .1-1-.1-1 2-1.5-2-3.5-2.4 1a8 8 0 0 0-1.7-1L15 3h-4l-.4 2.9a8 8 0 0 0-1.7 1l-2.4-1-2 3.5 2 1.5-.1 1 .1 1-2 1.5 2 3.5 2.4-1a8 8 0 0 0 1.7 1L11 21h4l.4-2.9a8 8 0 0 0 1.7-1l2.4 1 2-3.5-2.1-1.6ZM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"/></svg>How it works</a></li>
+    </ul></details>
+    <details class="footer-group footer-mobile-only"><summary>About</summary><ul>
+      <li><a href="about.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="8" r="1.2" fill="currentColor"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>About LiveHandle</a></li>
+      <li><a href="learn.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5.5A2.5 2.5 0 0 1 5.5 3H11v17H5.5A2.5 2.5 0 0 0 3 22V5.5Zm18 0A2.5 2.5 0 0 0 18.5 3H13v17h5.5a2.5 2.5 0 0 1 2.5 2V5.5Z"/></svg>How it works</a></li>
+    </ul></details>
+    <details class="footer-group"><summary>Legal</summary><ul>
+      <li><a href="about.html#privacy"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5 21 6v5.3c0 5.2-3.6 9.1-9 10.7-5.4-1.6-9-5.5-9-10.7V6l9-3.5Zm0 4v11.7c3.4-1.3 5.5-3.7 5.9-7.1V8L12 6.5Z"/></svg>Privacy</a></li>
+      <li><a href="about.html#terms"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 2h8l5 5v15H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm7 1.5V8h4.5L13 3.5ZM8 12v1.5h8V12H8Zm0 4v1.5h8V16H8Z"/></svg>Terms</a></li>
+      <li><a href="https://livehandle.site/copyright"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v17m-7 0h14M5 6h14M7 6l-4 7h8L7 6Zm10 0-4 7h8l-4-7Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Copyright</a></li>
+      <li><a href="contact.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a2 2 0 0 1 2 2v1L12 14 1 8V7a2 2 0 0 1 2-2Zm-2 5 10.5 6a1 1 0 0 0 1 0L23 10v9a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-9Z"/></svg>Contact</a></li>
+    </ul></details>
+    <details class="footer-group footer-mobile-only"><summary>Contact</summary><ul><li><a href="contact.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 5h18a2 2 0 0 1 2 2v1L12 14 1 8V7a2 2 0 0 1 2-2Zm-2 5 10.5 6a1 1 0 0 0 1 0L23 10v9a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-9Z"/></svg>Contact</a></li></ul></details>
+    <div class="footer-notice"><span class="note-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M12 11v5m0-8h.01" fill="none" stroke="var(--card)" stroke-width="2.2" stroke-linecap="round"/></svg></span><p>Public data only. Availability depends on platforms and providers. Do not download content you are not authorized to use.</p></div>
+  </div>
+  <div class="container footer-note"><p class="muted">© 2026 <a href="index.html">LiveHandle</a>. Free public analytics toolkit.</p><p class="muted">Made with <span class="heart" aria-label="love"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.4 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg></span> for creators</p></div>
+</footer>
+<section class="page-advertisements" aria-label="Advertisement placements"></section>
+<nav class="bottom-nav" aria-label="Quick navigation">
+  <a data-nav="index" href="index.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7h-6v7H4a1 1 0 0 1-1-1V10Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></span>Home</a><a data-nav="downloader" href="downloader.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v3h16v-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Download</a><a data-nav="growth" href="growth.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5m0 14h16M7 15l4-4 3 2 5-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Growth</a><a data-nav="trends" href="trends.html"><span aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.2 2.5c.7 4.2-2.8 5.2-2.8 8.2 0 1.1.6 1.8 1.5 2.2-.1-2.1 1.4-3.7 3.1-4.9 2.5 2.5 4 5 4 7.7a7 7 0 1 1-14 0c0-3.5 2-6.3 5.2-9 .1 2.1.5 3.1 1.4 3.8.1-2.4 1.9-4.6 1.6-8Z"/></svg></span>Trends</a>
+</nav>
+
+<script src="js/common.js"></script>
+<script src="js/downloader.js"></script>
+<script src="js/ads.js"></script>
+</body>
+</html>

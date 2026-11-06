@@ -1,0 +1,712 @@
+/* Downloader page only */
+.dl-hero {
+  padding: 52px 0 30px;
+  background:
+    radial-gradient(850px 460px at 20% 28%, rgba(109, 93, 254, .17), transparent 72%),
+    radial-gradient(760px 420px at 88% 55%, rgba(109, 93, 254, .11), transparent 70%),
+    var(--bg);
+  text-align: center;
+}
+
+.dl-hero-inner,
+body[data-page="downloader"] main > section > .container {
+  max-width: 972px;
+}
+
+body[data-page="downloader"] main > section > .container.prose {
+  max-width: 972px;
+}
+
+body[data-page="downloader"] main > section:not(.dl-hero) {
+  padding: 10px 0;
+  background: transparent;
+}
+
+.dl-hero .pill {
+  margin-bottom: 20px;
+  padding: 7px 15px;
+  background: color-mix(in srgb, var(--accent-soft) 72%, var(--card));
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--border));
+}
+
+.dl-hero h1 {
+  font-size: clamp(2.15rem, 4vw, 2.8rem);
+  margin-bottom: 14px;
+}
+
+.dl-hero .lead {
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  margin: 0 auto 20px;
+  max-width: 640px;
+}
+
+.platform-chips {
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.platform-chips .chip {
+  cursor: default;
+  padding: 8px 14px;
+  font-size: .9rem;
+}
+
+.platform-chips svg {
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+}
+
+.dl-form {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: 14px;
+  padding: 26px;
+  border-color: color-mix(in srgb, var(--accent) 25%, var(--border));
+  border-radius: 24px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 34%, var(--card)), var(--card) 58%);
+  box-shadow: 0 18px 42px rgba(48, 37, 132, .12);
+}
+
+.dl-input {
+  padding-left: 14px;
+}
+
+.dl-input .prefix {
+  display: inline-flex;
+  color: var(--accent);
+}
+
+.dl-input .prefix svg {
+  width: 19px;
+  height: 19px;
+}
+
+.dl-input .input {
+  padding: 14px 0;
+  background: transparent;
+}
+
+.dl-form .btn {
+  min-height: 58px;
+  border-radius: 16px;
+  font-size: 1rem;
+  padding: 15px 20px;
+}
+
+.dl-form .btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  font-size: .82rem;
+  color: var(--muted);
+}
+
+.consent input {
+  margin-top: 5px;
+  accent-color: var(--accent);
+}
+
+.dl-preview {
+  display: grid;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+
+.dl-preview[hidden] {
+  display: none;
+}
+
+.dl-preview video {
+  width: 100%;
+  max-height: 420px;
+  border-radius: 12px;
+  background: #000;
+}
+
+.dl-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.dl-title {
+  margin: 0;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.dl-badges {
+  width: 100%;
+  max-width: 940px;
+  margin: 22px auto 0;
+  padding: 8px 12px;
+  justify-content: stretch;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--card) 78%, transparent);
+}
+
+.dl-badges li {
+  flex: 1;
+  min-width: 0;
+  padding: 4px 8px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  font-size: .8rem;
+}
+
+.dl-badges li + li {
+  border-left: 1px solid var(--border);
+}
+
+.dl-badges .badge-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+}
+
+.dl-badges .badge-icon svg {
+  width: 17px;
+  height: 17px;
+}
+
+.dl-badges strong,
+.dl-badges small {
+  display: block;
+}
+
+.dl-badges strong {
+  line-height: 1.3;
+}
+
+.dl-badges small {
+  font-size: .72rem;
+}
+
+.dl-hero .notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 16px auto 0;
+  max-width: 940px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent-soft) 55%, var(--card));
+  color: var(--text);
+  text-align: left;
+  font-size: .87rem;
+  line-height: 1.5;
+}
+
+.dl-hero .notice svg {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: var(--accent);
+}
+
+.dl-steps-section > .container,
+.dl-legal-section > .container,
+.dl-faq-section > .container,
+.dl-support-section .section-head {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 40%, var(--card)), var(--card) 52%);
+  box-shadow: 0 12px 30px rgba(20, 18, 60, .08);
+}
+
+body[data-page="downloader"] main > section.dl-steps-section > .container,
+body[data-page="downloader"] main > section.dl-legal-section > .container.prose,
+body[data-page="downloader"] main > section.dl-faq-section > .container.prose,
+body[data-page="downloader"] main > section.dl-related-section > .container {
+  width: calc(100% - 32px);
+  max-width: 940px;
+}
+
+.dl-related-section > .container {
+  padding: 22px 24px 24px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 40%, var(--card)), var(--card) 52%);
+  box-shadow: 0 12px 30px rgba(20, 18, 60, .08);
+}
+
+.dl-related-section h2 {
+  margin-bottom: 18px;
+}
+
+.dl-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.dl-related-link {
+  display: flex;
+  min-width: 0;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--accent-soft) 42%, var(--card));
+  color: var(--text);
+  font-size: .9rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.dl-related-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.dl-related-link svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--accent);
+}
+
+.dl-related-link .related-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.dl-steps-section .section-head {
+  margin-bottom: 18px;
+}
+
+.dl-steps-section .steps {
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.dl-steps-section .steps > li {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr);
+  column-gap: 12px;
+  align-items: start;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.dl-steps-section .steps .num {
+  grid-row: span 2;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+}
+
+.dl-steps-section .steps h3 {
+  margin: 0 0 4px;
+}
+
+.dl-steps-section .steps p {
+  grid-column: 2;
+}
+
+.dl-support-section .section-head {
+  margin-bottom: 18px;
+}
+
+.dl-support-section .section-head > p {
+  max-width: none;
+  margin: 14px 0 0;
+}
+
+.dl-support-section .grid {
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.dl-support-section article.card {
+  padding: 24px;
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--accent-soft) 40%, var(--card)), var(--card) 52%);
+}
+
+.dl-support-section article.card p:last-child {
+  margin-bottom: 0;
+}
+
+.dl-legal-section .container.prose {
+  border-left: 1px solid var(--border);
+  padding-left: 24px;
+}
+
+.dl-legal-section .prose p {
+  margin-bottom: 12px;
+}
+
+.dl-faq-section .container.prose {
+  max-width: 940px;
+}
+
+.dl-legal-section .container.prose {
+  max-width: 940px;
+}
+
+.dl-faq-section h2 {
+  margin-bottom: 18px;
+}
+
+.dl-faq-section details.faq {
+  padding: 15px 18px;
+  border-color: color-mix(in srgb, var(--accent) 18%, var(--border));
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--accent-soft) 38%, var(--card));
+}
+
+.dl-faq-section details.faq summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+}
+
+.dl-faq-section details.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+.dl-faq-section .faq-icon {
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--accent);
+}
+
+.dl-faq-section .faq-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.dl-faq-section details.faq summary::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  flex: none;
+  margin-left: auto;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .18s ease;
+}
+
+.dl-faq-section details.faq[open] summary::after {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.dl-faq-section details.faq p {
+  margin: 12px 0 0 30px;
+}
+
+body[data-page="downloader"] .site-footer {
+  margin-top: 20px;
+  border-top: 1px solid var(--border);
+  background: linear-gradient(180deg, var(--bg-alt), var(--bg));
+}
+
+body[data-page="downloader"] .footer-grid {
+  min-height: 350px;
+}
+
+body[data-page="downloader"] .footer-grid a:hover {
+  color: var(--accent);
+}
+
+body[data-page="downloader"] .footer-notice {
+  color: var(--muted);
+}
+
+body[data-page="downloader"] .footer-notice .note-icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+
+body[data-page="downloader"] .footer-notice .note-icon svg {
+  width: 14px;
+  height: 14px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .header-inner {
+  height: 68px;
+  gap: 20px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .logo,
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .logo svg {
+  width: 46px;
+  height: 46px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .nav {
+  gap: 4px;
+  padding: 4px 6px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .nav a {
+  padding: 8px 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .header-app {
+  min-height: 42px;
+  padding: 9px 16px;
+  font-size: 13px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .header-actions .icon-btn {
+  width: 42px;
+  height: 42px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid .logo,
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid .logo svg {
+  width: 44px;
+  height: 44px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-group summary {
+  font-size: 13px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-group a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-group a > svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--accent);
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-group a::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  flex: none;
+  margin-left: auto;
+  border-top: 1.5px solid var(--muted);
+  border-right: 1.5px solid var(--muted);
+  transform: rotate(45deg);
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-grid {
+  max-width: 1320px;
+}
+
+body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .footer-note {
+  max-width: 1320px;
+}
+
+body[data-page="downloader"] .footer-badges {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 16px;
+  padding: 10px 8px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--accent-soft) 46%, var(--card));
+}
+
+body[data-page="downloader"] .footer-badges li {
+  align-items: flex-start;
+  gap: 6px;
+  padding: 4px;
+  font-size: 11px;
+}
+
+body[data-page="downloader"] .footer-badges .badge-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+body[data-page="downloader"] .footer-badges .badge-icon svg {
+  width: 15px;
+  height: 15px;
+}
+
+body[data-page="downloader"] .bottom-nav a span svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+}
+
+body[data-page="downloader"] .heart svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: -2px;
+}
+
+:root[data-theme="dark"] body[data-page="downloader"] .nav {
+  border-color: rgba(212, 208, 255, .76);
+  background: rgba(11, 11, 21, .86);
+  box-shadow: 0 0 0 1px rgba(109, 93, 254, .16), inset 0 1px 0 rgba(255, 255, 255, .07);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body[data-page="downloader"] .nav {
+    border-color: rgba(212, 208, 255, .76);
+    background: rgba(11, 11, 21, .86);
+    box-shadow: 0 0 0 1px rgba(109, 93, 254, .16), inset 0 1px 0 rgba(255, 255, 255, .07);
+  }
+}
+
+:root[data-theme="dark"] body[data-page="downloader"] .header-app {
+  border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
+  background: color-mix(in srgb, var(--accent-soft) 38%, var(--card));
+  box-shadow: 0 8px 20px rgba(109, 93, 254, .14);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) body[data-page="downloader"] .header-app {
+    border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
+    background: color-mix(in srgb, var(--accent-soft) 38%, var(--card));
+    box-shadow: 0 8px 20px rgba(109, 93, 254, .14);
+  }
+}
+
+@media (max-width: 1023px) {
+  .dl-hero {
+    padding-top: 42px;
+  }
+
+  .dl-badges {
+    max-width: 100%;
+  }
+
+  body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .header-inner {
+    height: 58px;
+    gap: 12px;
+  }
+
+  body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .logo,
+  body[data-page="downloader"]:not([data-page="index"]):not([data-page="contact"]) .logo svg {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .dl-hero {
+    padding: 36px 0 24px;
+  }
+
+  .dl-hero h1 {
+    font-size: clamp(2rem, 8vw, 2.6rem);
+  }
+
+  .dl-form {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .dl-badges {
+    padding: 6px 8px;
+  }
+
+  .dl-badges li {
+    gap: 6px;
+    padding: 6px 5px;
+    font-size: .72rem;
+  }
+
+  .dl-badges .badge-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .dl-steps-section > .container,
+  .dl-legal-section > .container,
+  .dl-faq-section > .container,
+  .dl-support-section .section-head,
+  .dl-support-section article.card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  body[data-page="downloader"] main > section.dl-steps-section > .container,
+  body[data-page="downloader"] main > section.dl-legal-section > .container.prose,
+  body[data-page="downloader"] main > section.dl-faq-section > .container.prose,
+  body[data-page="downloader"] main > section.dl-related-section > .container {
+    width: calc(100% - 32px);
+  }
+
+  .dl-related-section > .container {
+    padding: 20px;
+  }
+
+  .dl-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dl-legal-section .container.prose {
+    padding-left: 20px;
+  }
+
+  .dl-faq-section details.faq {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .dl-hero .lead {
+    font-size: .95rem;
+  }
+
+  .dl-badges li {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .dl-faq-section details.faq p {
+    margin-left: 0;
+  }
+}
